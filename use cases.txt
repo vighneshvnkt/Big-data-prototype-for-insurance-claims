@@ -1,0 +1,17 @@
+1) Payload is in incorrrect json format for post/put - return response error
+
+2) Payload does not comply with JSON Schema before put/post- 
+   return response error
+
+3) JSON Schema invalidated after delete - return response error and rollback 
+   changes
+
+4) Get/Delete object, array, elements of array - unique type__id for all
+
+5) PUT : replace object property, add new properties to object
+
+6) PUT : add objects to array
+
+7) Etag : generate etag during post, update etag on put, delete etag on del
+
+8) Security : generate token on post, validate token for put/get/delete

@@ -1,0 +1,246 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "objectID": {
+      "type": "string"
+    },
+    "_type": {
+      "type": "string"
+    },
+    "account_info": {
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "objectID": {
+          "type": "string"
+        },
+        "_type": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "password": {
+          "type": "string",
+          "minLength": 8
+        }
+      },
+      "required": [
+        "password",
+        "email"
+      ],
+      "type": "object",
+      "additionalProperties": false
+    },
+    "claims": {
+            "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "objectID": {
+            "type": "string"
+          },
+          "_type": {
+            "type": "string"
+          }
+        },
+      "items": {
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "objectID": {
+            "type": "string"
+          },
+          "_type": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "charges": {
+            "type": "number",
+            "minimum": 0
+          },
+          "date": {
+            "type": "string"
+          },
+          "provider": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "charges",
+          "date",
+          "provider"
+        ],
+        "type": "object",
+        "additionalProperties": true
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "misc": {
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_type": {
+          "type": "string"
+        },
+        "objectID": {
+          "type": "string"
+        },
+        "address": {
+          "properties": {
+            "_id": {
+              "type": "string"
+            },
+            "objectID": {
+              "type": "string"
+            },
+            "_type": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "line1": {
+              "type": "string"
+            },
+            "line2": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string",
+              "enum": [
+                "AL",
+                "AK",
+                "AZ",
+                "AR",
+                "CA",
+                "CO",
+                "CT",
+                "DE",
+                "FL",
+                "GA",
+                "HI",
+                "ID",
+                "IL",
+                "IN",
+                "IA",
+                "KS",
+                "KY",
+                "LA",
+                "ME",
+                "MD",
+                "MA",
+                "MI",
+                "MN",
+                "MS",
+                "MO",
+                "MT",
+                "NE",
+                "NV",
+                "NH",
+                "NJ",
+                "NM",
+                "NY",
+                "NC",
+                "ND",
+                "OH",
+                "OK",
+                "OR",
+                "PA",
+                "RI",
+                "SC",
+                "SD",
+                "TN",
+                "TX",
+                "UT",
+                "VT",
+                "VA",
+                "WA",
+                "WV",
+                "WI",
+                "WY",
+                "N/A"
+              ]
+            },
+            "zip": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "city",
+            "zip",
+            "country",
+            "line1",
+            "state"
+          ],
+          "type": "object",
+          "additionalProperties": false
+        },
+        "education": {
+          "type": "string"
+        },
+        "occupation": {
+          "type": "string"
+        },
+        "ssn": {
+          "type": "string"
+        }
+      },
+      "type": "object",
+      "additionalProperties": true
+    },
+    "personal_info": {
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "objectID": {
+          "type": "string"
+        },
+        "_type": {
+          "type": "string"
+        },
+        "DOB": {
+          "type": "string"
+        },
+        "firstname": {
+          "type": "string"
+        },
+        "lastname": {
+          "type": "string"
+        },
+        "middle_name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "DOB",
+        "lastname",
+        "firstname"
+      ],
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "account_info",
+    "personal_info"
+  ],
+  "type": "object",
+  "additionalProperties": true
+}

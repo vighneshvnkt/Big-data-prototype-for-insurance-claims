@@ -1,0 +1,30 @@
+{
+  "misc": {
+    "address": {
+      "line1": "18 Winterberry Ct",
+      "line2": "",
+      "city": "San Ramon",
+      "state": "CA",
+      "country": "USA",
+      "zip": "945-83"
+    },
+    "ssn": "123-23-23-23",
+    "occupation": "software engineer",
+    "education": "bachelors",
+    "xyz": "abc",
+    "myarray" : []
+  },
+  "claims": [{
+      "category": "fire",
+      "charges": 342,
+      "date": "05 / 30 / 2003",
+      "provider": "IHIX"
+    },
+    {
+      "category": "health",
+      "charges": 225,
+      "date": "05 / 30 / 2003",
+      "provider": "IHIY"
+    }
+  ]
+}

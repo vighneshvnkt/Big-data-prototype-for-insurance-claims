@@ -1,0 +1,38 @@
+{
+  "personal_info": {
+    "firstname": "Vighnesh",
+    "middle_name": "Venkatakrishnan",
+    "lastname": "Iyer",
+    "DOB": "30-05-1998"
+  },
+  "account_info": {
+    "email": "vighnesh.vnkt@gmail.com",
+    "password": "abc5645$"
+  },
+  "misc": {
+    "address": {
+      "line1": "13 Turquoise Way",
+      "line2": "",
+      "city": "Boston",
+      "state": "MA",
+      "country": "USA",
+      "zip": "021-20"
+    },
+    "ssn": "123-23-23-23",
+    "occupation": "software engineer",
+    "education": "masters"
+  },
+  "claims": [{
+      "category": "fire",
+      "charges": 45.55,
+      "date": "05 / 30 / 2003",
+      "provider": "IHI"
+    },
+    {
+      "category": "health",
+      "charges": 45.5,
+      "date": "05 / 30 / 2003",
+      "provider": "IHI"
+    }
+  ]
+}
