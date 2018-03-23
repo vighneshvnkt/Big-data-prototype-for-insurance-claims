@@ -1,21 +1,21 @@
 # big-data-prototype-for-insurance-claims
 
 A big data design prototype REST API for insurance claims developed in spring boot
-where the json is passed through curl commands and data is saved in Redis.
+where the json is passed through curl commands and data is saved in Redis. <br>
 There is flexibility to add/remove/merge additional properties to the same object or array without invalidating schema and implementation of ETags and REST API Security
 
 ### Prerequisites
 
-Java 9.0__
-Spring Tools Suite__
-Curl or Postman__
-Maven__
+Java 9.0 <br>
+Spring Tools Suite <br>
+Curl or Postman <br>
+Maven <br>
 
 
 
 ## Running the example
-Run the REST API through STS (ensure that path to JSON Schema is corrected in the code).__
-Run following commands in CURL__
+Run the REST API through STS (ensure that path to JSON Schema is corrected in the code). <br>
+Run following commands in CURL <br>
 POST command: (goodJSON contains the JSON to be posted)
 
 ```
