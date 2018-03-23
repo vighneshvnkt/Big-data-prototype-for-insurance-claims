@@ -6,16 +6,16 @@ There is flexibility to add/remove/merge additional properties to the same objec
 
 ### Prerequisites
 
-Java 9.0
-Spring Tools Suite
-Curl
-Maven
+Java 9.0__
+Spring Tools Suite__
+Curl or Postman__
+Maven__
 
 
 
 ## Running the example
-Run the REST API through STS (ensure that path to JSON Schema is corrected in the code). 
-Run following commands in CURL
+Run the REST API through STS (ensure that path to JSON Schema is corrected in the code).__
+Run following commands in CURL__
 POST command: (goodJSON contains the JSON to be posted)
 
 ```
