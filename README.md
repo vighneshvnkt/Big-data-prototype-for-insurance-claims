@@ -10,6 +10,7 @@ Java 9.0 <br>
 Spring Tools Suite <br>
 Curl or Postman <br>
 Maven <br>
+Redis <br>
 
 
 
